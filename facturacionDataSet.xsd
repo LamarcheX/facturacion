@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="facturacionDataSet" targetNamespace="http://tempuri.org/facturacionDataSet.xsd" xmlns:mstns="http://tempuri.org/facturacionDataSet.xsd" xmlns="http://tempuri.org/facturacionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="facturacionConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="facturacionConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.facturacion.Properties.Settings.GlobalReference.Default.facturacionConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="temdetallefacturaTableAdapter" GeneratorDataComponentClassName="temdetallefacturaTableAdapter" Name="temdetallefactura" UserDataComponentName="temdetallefacturaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="facturacionConnectionString (Settings)" DbObjectName="facturacion.dbo.temdetallefactura" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT cod_art_dftem, descrip_art_dftem, cant_art_dftem, pre_dftem, stotal FROM dbo.temdetallefactura</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="cod_art_dftem" DataSetColumn="cod_art_dftem" />
+              <Mapping SourceColumn="descrip_art_dftem" DataSetColumn="descrip_art_dftem" />
+              <Mapping SourceColumn="cant_art_dftem" DataSetColumn="cant_art_dftem" />
+              <Mapping SourceColumn="pre_dftem" DataSetColumn="pre_dftem" />
+              <Mapping SourceColumn="stotal" DataSetColumn="stotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="facturacionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="facturacionDataSet" msprop:Generator_UserDSName="facturacionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="temdetallefactura" msprop:Generator_TableClassName="temdetallefacturaDataTable" msprop:Generator_TableVarName="tabletemdetallefactura" msprop:Generator_TablePropName="temdetallefactura" msprop:Generator_RowDeletingName="temdetallefacturaRowDeleting" msprop:Generator_RowChangingName="temdetallefacturaRowChanging" msprop:Generator_RowEvHandlerName="temdetallefacturaRowChangeEventHandler" msprop:Generator_RowDeletedName="temdetallefacturaRowDeleted" msprop:Generator_UserTableName="temdetallefactura" msprop:Generator_RowChangedName="temdetallefacturaRowChanged" msprop:Generator_RowEvArgName="temdetallefacturaRowChangeEvent" msprop:Generator_RowClassName="temdetallefacturaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_art_dftem" msprop:Generator_ColumnVarNameInTable="columncod_art_dftem" msprop:Generator_ColumnPropNameInRow="cod_art_dftem" msprop:Generator_ColumnPropNameInTable="cod_art_dftemColumn" msprop:Generator_UserColumnName="cod_art_dftem" type="xs:int" minOccurs="0" />
+              <xs:element name="descrip_art_dftem" msprop:Generator_ColumnVarNameInTable="columndescrip_art_dftem" msprop:Generator_ColumnPropNameInRow="descrip_art_dftem" msprop:Generator_ColumnPropNameInTable="descrip_art_dftemColumn" msprop:Generator_UserColumnName="descrip_art_dftem" type="xs:int" minOccurs="0" />
+              <xs:element name="cant_art_dftem" msprop:Generator_ColumnVarNameInTable="columncant_art_dftem" msprop:Generator_ColumnPropNameInRow="cant_art_dftem" msprop:Generator_ColumnPropNameInTable="cant_art_dftemColumn" msprop:Generator_UserColumnName="cant_art_dftem" type="xs:int" minOccurs="0" />
+              <xs:element name="pre_dftem" msprop:Generator_ColumnVarNameInTable="columnpre_dftem" msprop:Generator_ColumnPropNameInRow="pre_dftem" msprop:Generator_ColumnPropNameInTable="pre_dftemColumn" msprop:Generator_UserColumnName="pre_dftem" type="xs:double" minOccurs="0" />
+              <xs:element name="stotal" msprop:Generator_ColumnVarNameInTable="columnstotal" msprop:Generator_ColumnPropNameInRow="stotal" msprop:Generator_ColumnPropNameInTable="stotalColumn" msprop:Generator_UserColumnName="stotal" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
